@@ -8,9 +8,10 @@ app.use(
   express.json(),
   usersRouter,
 );
-const port = 3000;
+const port = 3001;
 
 
 app.listen(port, async () => {
   console.log(`Server running on port ${port}`);
 });
+ export default  app;
