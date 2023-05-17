@@ -22,10 +22,6 @@ jobs:
       - name: install dependencies
         run: npm install
 
-      - name: Start node
-        run:  npm start -d
-       
-
       - name: execute integration tests
         run: npm run test
          
