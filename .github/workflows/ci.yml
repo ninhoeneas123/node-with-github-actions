@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Start node
-        run:  npm start 
+        run:  npm start -d
        
 
       - name: execute integration tests
