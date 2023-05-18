@@ -7,7 +7,7 @@
     "start": "ts-node-dev --files src/app.ts -r tsconfig-paths/register",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --maxWorkers=1 --verbose --runInBand --detectOpenHandles --forceExit",
+    "test":"jest --detectOpenHandles",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll"
   },
   "author": "",
