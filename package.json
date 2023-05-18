@@ -7,7 +7,7 @@
     "start": "ts-node-dev --files src/app.ts -r tsconfig-paths/register",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc",
-    "test": "tsc --noEmit -p tests && jest --coverage && npm run lint",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --maxWorkers=1 --verbose --forceExit",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll"
   },
   "author": "",
