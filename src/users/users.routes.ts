@@ -5,6 +5,8 @@ import UsersController from './users-controller'
 
 const usersRouter = Router()
 
-usersRouter.get('/users/create', UsersController.createUser)
+usersRouter.post('/users/create', UsersController.createUser)
+usersRouter.get('/users/list', UsersController.listUsers)
+usersRouter.delete('/users/delete/:id', UsersController.deleteUser)
 
 export default usersRouter
